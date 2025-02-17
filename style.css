@@ -1,0 +1,38 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav {
+  display: block;
+  justify-content: space-between;
+}
+/* CSS Stylesheet */
+@media (max-width: 768px) {
+  .column {
+    width: 80%;
+  }
+}
+@media (orientation: portrait) {
+  .container {
+    background-color: #ccc;
+  }
+}
+@media (orientation: landscape) {
+  .container {
+    background-color: #eee;
+  }
+}
+@media (-webkit-min-device-pixel-ration: 2),
+  (min--moz-device-pixel-ration: 2),
+  (-o-min-device-pixel-ration: 2/1),
+  (min-device-pixel-ration: 2) {
+    .column {
+      background-color: red;
+    }
+}
+@media (max-width: 768px) {
+  .navigation {
+    display: none;
+  }
+}
